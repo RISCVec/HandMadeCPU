@@ -10,4 +10,3 @@ wget https://github.com/sbt/sbt/releases/download/v1.9.7/sbt-1.9.7.zip
 unzip sbt-1.9.7.zip
 sudo mv ./sbt /usr/local
 echo "PATH=\$PATH:/usr/local/scala-2.12.19/bin:/usr/local/sbt/bin" >> ~/.bashrc
-source .bashrc
