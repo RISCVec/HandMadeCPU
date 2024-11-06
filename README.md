@@ -1,5 +1,6 @@
 # HandMadeCPU
 HandMadeCPU for BiliBili
+请配合B站视频一起食用
 
 手搓RISC-V CPU
 你需要一个Ubuntu 20.04的环境
