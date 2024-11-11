@@ -152,7 +152,7 @@ class Core extends Module {
         (exe_fun === BR_BEQ)    ->  (op1_data === op2_data),
         (exe_fun === BR_BNE)    ->  !(op1_data === op2_data),
         (exe_fun === BR_BLT)    ->  (op1_data.asUInt() < op2_data.asUInt()),
-        (exe_fun === BR_BGE)    ->  (op1_data.asSInt() < op2_data.asSInt()),
+        (exe_fun === BR_BGE)    ->  !(op1_data.asSInt() < op2_data.asSInt()),
         (exe_fun === BR_BLTU)    ->  (op1_data < op2_data),
         (exe_fun === BR_BGEU)    ->  !(op1_data < op2_data),
     ))
