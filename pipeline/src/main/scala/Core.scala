@@ -230,7 +230,7 @@ class Core extends Module {
         (exe_reg_exe_fun === BR_BEQ)    ->  (exe_reg_op1_data === exe_reg_op2_data),
         (exe_reg_exe_fun === BR_BNE)    ->  !(exe_reg_op1_data === exe_reg_op2_data),
         (exe_reg_exe_fun === BR_BLT)    ->  (exe_reg_op1_data.asUInt() < exe_reg_op2_data.asUInt()),
-        (exe_reg_exe_fun === BR_BGE)    ->  (exe_reg_op1_data.asSInt() < exe_reg_op2_data.asSInt()),
+        (exe_reg_exe_fun === BR_BGE)    ->  !(exe_reg_op1_data.asSInt() < exe_reg_op2_data.asSInt()),
         (exe_reg_exe_fun === BR_BLTU)    ->  (exe_reg_op1_data < exe_reg_op2_data),
         (exe_reg_exe_fun === BR_BGEU)    ->  !(exe_reg_op1_data < exe_reg_op2_data),
     ))
